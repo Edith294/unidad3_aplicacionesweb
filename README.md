@@ -62,28 +62,52 @@ El proyecto sigue una arquitectura modular basada en:
 
 # 📂 Estructura del Proyecto
 
+# 📂 Estructura del Proyecto
+
+```
 mi_api_v2/
 │
 ├── app/
-│ ├── models/
-│ ├── routes/
-│ ├── config.py
-│ ├── extensions.py
-│ └── init.py
+│   │
+│   ├── __init__.py          # Inicialización de la aplicación (App Factory)
+│   ├── config.py            # Configuraciones (Dev, Test, Prod)
+│   ├── extensions.py        # Inicialización de extensiones (DB, JWT, etc.)
+│   │
+│   ├── models/              # Modelos de base de datos
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── student.py
+│   │   ├── subject.py
+│   │   └── grade.py
+│   │
+│   ├── routes/              # Rutas / Blueprints
+│   │   ├── __init__.py
+│   │   ├── auth_routes.py
+│   │   ├── student_routes.py
+│   │   ├── subject_routes.py
+│   │   └── store_routes.py
+│   │
+│   └── services/            # Lógica de negocio (si aplica)
 │
-├── tests/
-│ ├── conftest.py
-│ ├── test_models.py
-│ ├── test_auth.py
-│ ├── test_routes.py
-│ └── test_e2e.py
+├── tests/                   # Pruebas automatizadas
+│   ├── __init__.py
+│   ├── conftest.py          # Configuración de fixtures
+│   ├── test_models.py
+│   ├── test_auth.py
+│   ├── test_students.py
+│   ├── test_subjects.py
+│   ├── test_store_e2e.py
+│   └── test_coverage.py
 │
-├── venv/
-├── requirements.txt
-├── run.py
-├── .env
-├── .gitignore
-└── README.md
+├── venv/                    # Entorno virtual (ignorado por git)
+├── htmlcov/                 # Reporte de cobertura (ignorado por git)
+│
+├── .env                     # Variables de entorno
+├── .gitignore               # Archivos ignorados por Git
+├── requirements.txt         # Dependencias del proyecto
+├── run.py                   # Punto de entrada de la aplicación
+└── README.md                # Documentación del proyecto
+```
 
 
 
