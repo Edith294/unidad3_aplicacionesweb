@@ -22,7 +22,7 @@ Este proyecto consiste en el desarrollo de una **API REST profesional** construi
 El sistema simula:
 
 - 🎓 Plataforma académica (estudiantes, materias, calificaciones)
-- 🛒 Flujo completo de tienda (TechStore API)
+
 
 ---
 
