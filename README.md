@@ -62,9 +62,6 @@ El proyecto sigue una arquitectura modular basada en:
 
 # 📂 Estructura del Proyecto
 
-# 📂 Estructura del Proyecto
-
-```
 mi_api_v2/
 │
 ├── app/
@@ -107,7 +104,7 @@ mi_api_v2/
 ├── requirements.txt         # Dependencias del proyecto
 ├── run.py                   # Punto de entrada de la aplicación
 └── README.md                # Documentación del proyecto
-```
+
 
 
 
