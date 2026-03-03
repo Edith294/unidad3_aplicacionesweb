@@ -62,8 +62,6 @@ El proyecto sigue una arquitectura modular basada en:
 
 # 📂 Estructura del Proyecto
 
-# 📂 Estructura del Proyecto
-
 ```
 mi_api_v2/
 │
